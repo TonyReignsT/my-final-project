@@ -9,7 +9,6 @@
         const loader = document.getElementById('loader');
         const detailModal = document.getElementById('detailModal');
 
-        // --- Part 2: Core Functions ---
 
          // Fetches data from the Jikan API 
         
