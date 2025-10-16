@@ -1,0 +1,37 @@
+/* Applying the graphic identity from the project proposal */
+        body {
+            background-color: #001F3F; /* Main color */
+            color: #FFF; /* Text color */
+            font-family: 'Open Sans', sans-serif; /* Body Text font */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif; /* Heading font */
+        }
+        .accent-color {
+            color: #7FDBFF; /* Accent color */
+        }
+        .btn-primary {
+            background-color: #FF4136; /* Button color */
+            color: #FFF;
+        }
+        /* Custom scrollbar for a better look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #001F3F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7FDBFF;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6abeda;
+        }
+        /* Styles for the modal */
+        .modal {
+            background-color: rgba(0, 31, 63, 0.9);
+        }
+        .modal-content {
+            background-color: #001833;
+        }
