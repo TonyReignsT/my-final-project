@@ -1,5 +1,4 @@
-/* Applying the graphic identity from the project proposal */
-        body {
+body {
             background-color: #001F3F; /* Main color */
             color: #FFF; /* Text color */
             font-family: 'Open Sans', sans-serif; /* Body Text font */
@@ -14,7 +13,7 @@
             background-color: #FF4136; /* Button color */
             color: #FFF;
         }
-        /* Custom scrollbar for a better look */
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }

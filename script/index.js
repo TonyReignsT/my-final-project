@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://api.jikan.moe/v4';
+const API_BASE_URL = 'https://api.jikan.moe/v4'; // Jikan API base URL
         const searchInput = document.getElementById('searchInput');
         const searchResultsSection = document.getElementById('searchResultsSection');
         const searchResultsContainer = document.getElementById('searchResults');
@@ -13,7 +13,7 @@ const API_BASE_URL = 'https://api.jikan.moe/v4';
         // --- API Fetching ---
         
         /**
-         * Fetches data from the Jikan API with a delay to respect rate limits.
+         * Fetches data from the Jikan API.
          * @param {string} endpoint - The API endpoint to fetch.
          * @returns {Promise<Object>} - The JSON response from the API.
          */
@@ -24,7 +24,7 @@ const API_BASE_URL = 'https://api.jikan.moe/v4';
                     console.error(`HTTP error! status: ${response.status}`);
                     return null;
                 }
-                await new Promise(resolve => setTimeout(resolve, 500)); // Delay for rate limiting
+                await new Promise(resolve => setTimeout(resolve, 500)); 
                 return response.json();
             } catch (error) {
                 console.error("Error fetching data: ", error);
@@ -69,7 +69,8 @@ const API_BASE_URL = 'https://api.jikan.moe/v4';
             });
         }
 
-        // --- Page Logic ---
+        
+
 
         /**
          * Displays the loading spinner and hides content.
