@@ -85,7 +85,7 @@
        // search functionality.
         function handleSearch(query) {
             loader.classList.remove('hidden'); // Show loading spinner
-            searchResultsSection.add('hidden'); // Hide content
+            searchResultsSection.classList.add('hidden'); // Hide content
             trendingSection.classList.add('hidden');
 
             fetchData(`anime?q=${encodeURIComponent(query)}&limit=12`)
@@ -159,12 +159,12 @@
             }
         });
 
-        // When the user clicks the "Back" button...
-        // backButton.addEventListener('click', () => {
-        //      searchInput.value = ''; // Clear the search bar
-        //      searchResultsSection.classList.add('hidden'); // Hide search results
-        //      trendingSection.classList.remove('hidden'); // Show trending section
-        // });
+        //When the user clicks the "Back" button...
+        backButton.addEventListener('click', () => {
+             searchInput.value = ''; // Clear the search bar
+             searchResultsSection.classList.add('hidden'); // Hide search results
+             trendingSection.classList.remove('hidden'); // Show trending section
+        });
         
         // When the user presses the 'Escape' key...
         window.addEventListener('keydown', (event) => {
